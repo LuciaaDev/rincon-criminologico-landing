@@ -12,6 +12,7 @@ import { TranslocoModule, TranslocoService} from '@jsverse/transloco';
 export class AppComponent {
   title = 'rincon-criminologico-landing';
   
+  // TODO: Fix error in browser console
   constructor(
     private readonly translocoService: TranslocoService
   ) {
