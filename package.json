@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
+    "start": "nx serve -o",
     "build": "nx build",
     "test": "nx test"
   },
@@ -17,6 +17,7 @@
     "@angular/platform-browser": "~18.0.0",
     "@angular/platform-browser-dynamic": "~18.0.0",
     "@angular/router": "~18.0.0",
+    "@jsverse/transloco": "^7.5.1",
     "@nrwl/nx-cloud": "^19.1.0",
     "@nx/angular": "19.1.0",
     "rxjs": "~7.8.0",

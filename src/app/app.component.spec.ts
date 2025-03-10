@@ -1,12 +1,15 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterTestingModule } from '@angular/router/testing';
+import { TranslocoTestingModule, TranslocoService } from '@jsverse/transloco';
 
 describe('AppComponent', () => {
+  let translocoServiceMock = TranslocoService;
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent, NxWelcomeComponent, RouterTestingModule],
+      imports: [AppComponent, RouterTestingModule, TranslocoTestingModule],
+      providers: [ {component: TranslocoService, useClass: translocoServiceMock} ]
     }).compileComponents();
   });
 
