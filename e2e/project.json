@@ -1,9 +1,33 @@
 {
   "name": "e2e",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "projectType": "application",
   "sourceRoot": "e2e/src",
-  "implicitDependencies": ["rincon-criminologico-landing"],
-  "// targets": "to see all targets run: nx show project e2e --web",
-  "targets": {}
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "playwrightConfig": "e2e/playwright.config.ts",
+        "devServerTarget": "rincon-criminologico-landing:serve:development",
+        "testingType": "e2e"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "rincon-criminologico-landing:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "rincon-criminologico-landing:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["rincon-criminologico-landing"]
 }
