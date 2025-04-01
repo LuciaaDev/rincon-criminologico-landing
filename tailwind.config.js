@@ -9,8 +9,7 @@ module.exports = {
         lg: { min: "1201px" },
       },
       colors: {
-        // BASE
-        // BOLUDA colors
+        // BASE Colors
         // Blue
         baseRCBlueFirst: "#e7f1f7",
         baseRCBlueSecond: "#c1ddeb",
