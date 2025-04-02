@@ -1,1 +1,12 @@
-<p>app-header works!</p>
+<div class="header-container bg-baseRCBlueNinth lg:h-[80px] flex justify-between">
+    <div class="logo-container w-[200px] h-[50px] flex flex-col justify-start px-4 py-2 cursor-pointer" (click)="goToHomeLanding()">
+        <p class="rincon-text text-baseRCBlueFirst text-2xl font-bold">{{"logo.rincon" | transloco }}</p>
+        <p class="crim-text text-baseRCBlueFirst text-2xl">{{"logo.criminologico" | transloco }}</p>
+    </div>
+    <div class="action-buttons w-[500px] flex justify-between text-lg pr-4">
+        <button>{{"header.contact" | transloco }}</button>
+        <button>{{"header.about_me" | transloco }}</button>
+        <select>{{"header.language" | transloco }}</select>
+        <button>{{"header.log_in" | transloco }}</button>
+    </div>
+</div>

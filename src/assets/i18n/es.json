@@ -1,3 +1,12 @@
 {
-    "hello-world": "Hola Mundo"
+    "logo": {
+        "rincon": "Rincón",
+        "criminologico": "CRIMINOLÓGICO"
+    },
+    "header": {
+        "contact": "Contacto",
+        "about_me": "Sobre mí",
+        "language": "Idioma",
+        "log_in": "Accede"
+    }
 }

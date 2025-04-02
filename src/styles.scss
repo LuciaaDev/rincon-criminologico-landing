@@ -1,5 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: 'Livvic Bold';
+    src: url('./assets/fonts/Livvic/Livvic-Bold.ttf');
+}
+@font-face {
+    font-family: 'Livvic BoldItalic';
+    src: url('./assets/fonts/Livvic/Livvic-BoldItalic.ttf');
+}
+@font-face {
+    font-family: 'Livvic ExtraLight';
+    src: url('./assets/fonts/Livvic/Livvic-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'Livvic ExtraLightItalic';
+    src: url('./assets/fonts/Livvic/Livvic-ExtraLightItalic.ttf');
+}
+@font-face {
+    font-family: 'Livvic Italic';
+    src: url('./assets/fonts/Livvic/Livvic-Italic.ttf');
+}
+@font-face {
+    font-family: 'Livvic Light';
+    src: url('./assets/fonts/Livvic/Livvic-Light.ttf');
+}
+@font-face {
+    font-family: 'Livvic LightItalic';
+    src: url('./assets/fonts/Livvic/Livvic-LightItalic.ttf');
+}
+@font-face {
+    font-family: 'Livvic Medium';
+    src: url('./assets/fonts/Livvic/Livvic-Medium.ttf');
+}
+@font-face {
+    font-family: 'Livvic MediumItalic';
+    src: url('./assets/fonts/Livvic/Livvic-MediumItalic.ttf');
+}
+@font-face {
+    font-family: 'Livvic Regular';
+    src: url('./assets/fonts/Livvic/Livvic-Regular.ttf');
+}
+@font-face {
+    font-family: 'Livvic SemiBold';
+    src: url('./assets/fonts/Livvic/Livvic-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Livvic SemiBoldItalic';
+    src: url('./assets/fonts/Livvic/Livvic-SemiBoldItalic.ttf');
+}
+@font-face {
+    font-family: 'Livvic Thin';
+    src: url('./assets/fonts/Livvic/Livvic-Thin.ttf');
+}
+@font-face {
+    font-family: 'Livvic ThinItalic';
+    src: url('./assets/fonts/Livvic/Livvic-ThinItalic.ttf');
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('./assets/fonts/Merriweather/Merriweather-VariableFont.ttf');
+}
 
 /* You can add global styles to this file, and also import other style files */
