@@ -6,7 +6,12 @@
     <div class="action-buttons w-[500px] flex justify-between text-lg pr-4">
         <button>{{"header.contact" | transloco }}</button>
         <button>{{"header.about_me" | transloco }}</button>
-        <select>{{"header.language" | transloco }}</select>
+        <select>
+            <option value="" disabled selected hidden>{{"header.language" | transloco }}</option>
+            <option value="spanish">{{"header.lang_spanish" | transloco }}</option>
+            <option value="english">{{"header.lang_english" | transloco }}</option>
+            <option value="valencian">{{"header.lang_valencian" | transloco }}</option>
+        </select>
         <button>{{"header.log_in" | transloco }}</button>
     </div>
 </div>

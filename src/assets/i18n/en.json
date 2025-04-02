@@ -7,6 +7,9 @@
         "contact": "Contact",
         "about_me": "About me",
         "language": "Language",
+        "lang_spanish": "Spanish",
+        "lang_english": "English",
+        "lang_valencian": "Valencian",
         "log_in": "Log in"
     }
 }
