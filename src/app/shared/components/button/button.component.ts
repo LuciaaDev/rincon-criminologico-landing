@@ -10,15 +10,15 @@ import { TranslocoModule } from "@jsverse/transloco";
     styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
-    @Input() btnText!: string;
-    @Input() btnColor!: string;
-    @Input() btnSize!: string;
-    @Input() btnDisabled = false;
+    @Input() text!: string;
+    @Input() color!: string;
+    @Input() size!: string;
+    @Input() disabled = false;
 
     @Output() clickBtn = new EventEmitter<void>();
 
     public onClickButton(): void {
-        if(!this.btnDisabled) {
+        if(!this.disabled) {
             this.clickBtn.emit();
         }
     }

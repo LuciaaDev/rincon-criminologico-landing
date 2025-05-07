@@ -4,14 +4,14 @@
         <p class="crim-text text-baseRCBlueFirst text-2xl leading-none m-0">{{"logo.criminologico" | transloco }}</p>
       </div>
     <div class="action-buttons w-[500px] flex justify-between text-lg pr-4 mt-4">
-        <app-button [btnText]="'header.contact'" [btnColor]="'primary'" [btnSize]="'medium'"></app-button>
-        <app-button [btnText]="'header.about_me'" [btnColor]="'primary'" [btnSize]="'medium'"></app-button>
+        <app-button [text]="'header.contact'" [color]="'primary'" [size]="'medium'"></app-button>
+        <app-button [text]="'header.about_me'" [color]="'primary'" [size]="'medium'"></app-button>
         <select>
             <option value="" disabled selected hidden>{{"header.language" | transloco }}</option>
             <option value="spanish">{{"header.lang_spanish" | transloco }}</option>
             <option value="english">{{"header.lang_english" | transloco }}</option>
             <option value="valencian">{{"header.lang_valencian" | transloco }}</option>
         </select>
-        <app-button [btnText]="'header.log_in'" [btnColor]="'primary'" [btnSize]="'medium'"></app-button>
+        <app-button [text]="'header.log_in'" [color]="'primary'" [size]="'medium'"></app-button>
     </div>
 </div>
