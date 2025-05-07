@@ -1,0 +1,15 @@
+{
+    "logo": {
+        "rincon": "Rincón",
+        "criminologico": "CRIMINOLÓGICO"
+    },
+    "header": {
+        "contact": "Contacte",
+        "about_me": "Sobre mi",
+        "language": "Idioma",
+        "lang_spanish": "Espanyol",
+        "lang_english": "Anglés",
+        "lang_valencian": "Valencià",
+        "log_in": "Accedix"
+    }
+}

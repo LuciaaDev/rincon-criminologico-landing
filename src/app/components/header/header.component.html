@@ -3,15 +3,18 @@
         <p class="rincon-text text-baseRCBlueFirst text-2xl font-bold leading-none m-0">{{"logo.rincon" | transloco }}</p>
         <p class="crim-text text-baseRCBlueFirst text-2xl leading-none m-0">{{"logo.criminologico" | transloco }}</p>
       </div>
-    <div class="action-buttons w-[500px] flex justify-between text-lg pr-4 mt-4">
+    <div class="action-buttons w-[550px] flex justify-between text-lg pr-4 mt-4">
         <app-button [text]="'header.contact'" [color]="'primary'" [size]="'medium'"></app-button>
         <app-button [text]="'header.about_me'" [color]="'primary'" [size]="'medium'"></app-button>
-        <select>
-            <option value="" disabled selected hidden>{{"header.language" | transloco }}</option>
-            <option value="spanish">{{"header.lang_spanish" | transloco }}</option>
-            <option value="english">{{"header.lang_english" | transloco }}</option>
-            <option value="valencian">{{"header.lang_valencian" | transloco }}</option>
-        </select>
+        <app-dropdown 
+        [optionsList]="languageOptions" 
+        [color]="'primary'" 
+        [size]="'medium'"
+        [selectedOption]="selectedLangOption"
+        [isDisabledSelectedHidden]="true"
+        [disabledSelectedHiddenText]="'header.language'"
+        (selectionChange)="getTranslation($event)">
+        </app-dropdown>
         <app-button [text]="'header.log_in'" [color]="'primary'" [size]="'medium'"></app-button>
     </div>
 </div>
