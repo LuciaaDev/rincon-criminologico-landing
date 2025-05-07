@@ -15,11 +15,11 @@ export class ButtonComponent {
     @Input() size!: string;
     @Input() disabled = false;
 
-    @Output() clickBtn = new EventEmitter<void>();
+    @Output() clickBtnChange = new EventEmitter<void>();
 
     public onClickButton(): void {
         if(!this.disabled) {
-            this.clickBtn.emit();
+            this.clickBtnChange.emit();
         }
     }
 }
