@@ -1,17 +1,17 @@
 <div class="header-container bg-baseRCBlueNinth lg:h-[80px] flex justify-between">
-    <div class="logo-container w-[200px] h-[50px] flex flex-col justify-start px-4 py-2 cursor-pointer" (click)="goToHomeLanding()">
-        <p class="rincon-text text-baseRCBlueFirst text-2xl font-bold">{{"logo.rincon" | transloco }}</p>
-        <p class="crim-text text-baseRCBlueFirst text-2xl">{{"logo.criminologico" | transloco }}</p>
-    </div>
-    <div class="action-buttons w-[500px] flex justify-between text-lg pr-4">
-        <button>{{"header.contact" | transloco }}</button>
-        <button>{{"header.about_me" | transloco }}</button>
+    <div class="logo-container w-[200px] h-[50px] flex flex-col justify-start px-4 py-2 cursor-pointer mt-2" (click)="goToHomeLanding()">
+        <p class="rincon-text text-baseRCBlueFirst text-2xl font-bold leading-none m-0">{{"logo.rincon" | transloco }}</p>
+        <p class="crim-text text-baseRCBlueFirst text-2xl leading-none m-0">{{"logo.criminologico" | transloco }}</p>
+      </div>
+    <div class="action-buttons w-[500px] flex justify-between text-lg pr-4 mt-4">
+        <app-button [btnText]="'header.contact'" [btnColor]="'primary'" [btnSize]="'medium'"></app-button>
+        <app-button [btnText]="'header.about_me'" [btnColor]="'primary'" [btnSize]="'medium'"></app-button>
         <select>
             <option value="" disabled selected hidden>{{"header.language" | transloco }}</option>
             <option value="spanish">{{"header.lang_spanish" | transloco }}</option>
             <option value="english">{{"header.lang_english" | transloco }}</option>
             <option value="valencian">{{"header.lang_valencian" | transloco }}</option>
         </select>
-        <button>{{"header.log_in" | transloco }}</button>
+        <app-button [btnText]="'header.log_in'" [btnColor]="'primary'" [btnSize]="'medium'"></app-button>
     </div>
 </div>

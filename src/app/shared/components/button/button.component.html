@@ -1,0 +1,5 @@
+<button 
+[ngClass]="['btn_content', btnColor, btnSize]"
+[disabled]="btnDisabled"
+(click)="onClickButton()"
+>{{ btnText | transloco }}</button>
