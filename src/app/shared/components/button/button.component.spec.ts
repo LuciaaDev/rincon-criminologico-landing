@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { TranslocoService, TranslocoTestingModule } from "@jsverse/transloco";
-import { ButtonComponent } from "src/app/shared/components/button/button.component";
+import { ButtonComponent } from "./button.component";
 
 describe('ButtonComponent', () => {
     let component: ButtonComponent;
