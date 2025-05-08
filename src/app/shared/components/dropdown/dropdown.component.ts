@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component, Input, Output, EventEmitter } from "@angular/core";
+import { Component, Input, Output, EventEmitter, SimpleChanges } from "@angular/core";
 import { TranslocoModule } from "@jsverse/transloco";
 import { DropdownOptions } from "../../interfaces/dropdown.model";
 
@@ -21,9 +21,13 @@ export class DropdownComponent {
 
     @Output() selectionChange = new EventEmitter<any>();
 
-    public onSelectOption(): void {
+    public onSelectOption(event: Event): void {
         if(!this.disabled) {
-            this.selectionChange.emit();
+            const target = event.target as HTMLSelectElement | null;
+            const value = target?.value;
+            if (value !== null || value !== undefined) {
+                this.selectionChange.emit(value);
+            }
         }
     }
 }

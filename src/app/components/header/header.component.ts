@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { ChangeDetectorRef, Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { TranslocoModule, TranslocoService } from "@jsverse/transloco";
 import { ButtonComponent } from "../../shared/components/button/button.component";
@@ -26,7 +26,8 @@ export class HeaderComponent {
     
     constructor(
         private _router: Router,
-        private _translocoService: TranslocoService
+        private _translocoService: TranslocoService,
+        private _changeDetectorRef: ChangeDetectorRef
     ) {}
 
     /**
@@ -40,9 +41,10 @@ export class HeaderComponent {
      * To translate web page clicking on a language option
     */
     public getTranslation(lang: string): void {
-        // TODO: Traducir correctamente la web
         this._translocoService.setActiveLang(lang);
         this.selectedLangOption = lang;
         this.activeLang = lang;
+
+        this._changeDetectorRef.detectChanges();
     }
 }

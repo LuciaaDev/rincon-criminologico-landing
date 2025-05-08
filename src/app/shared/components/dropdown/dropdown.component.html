@@ -2,7 +2,7 @@
 [ngClass]="['select-content', color, size]"
 [disabled]="disabled"
 [value]="selectedOption"
-(change)="onSelectOption()"
+(change)="onSelectOption($event)"
 >
 @if(isDisabledSelectedHidden) {
     <option value="" disabled selected hidden>{{ disabledSelectedHiddenText | transloco }}</option>
