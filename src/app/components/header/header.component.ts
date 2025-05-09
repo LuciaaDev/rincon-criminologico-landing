@@ -3,11 +3,17 @@ import { Router } from "@angular/router";
 import { TranslocoModule, TranslocoService } from "@jsverse/transloco";
 import { ButtonComponent } from "../../shared/components/button/button.component";
 import { DropdownComponent } from "../../shared/components/dropdown/dropdown.component";
-import { DropdownOptions } from "../../shared/interfaces/dropdown.model";
+import { BurgerSubMenuItem } from "../../shared/interfaces/shared-components.model";
+import { BurgerMenuComponent } from "src/app/shared/components/burger-menu/burger-menu.component";
 
 @Component({
     standalone: true,
-    imports: [TranslocoModule, ButtonComponent, DropdownComponent],
+    imports: [
+        TranslocoModule, 
+        ButtonComponent, 
+        DropdownComponent,
+        BurgerMenuComponent
+    ],
     selector: 'app-header',
     templateUrl: './header.component.html',
     styleUrl: './header.component.scss'
@@ -20,7 +26,31 @@ export class HeaderComponent {
         {label: 'header.lang_valencian', value: 'ca'},
     ];
 
-    public showActionButtons = true;
+    public burgerListOptions: BurgerSubMenuItem[] = [
+        {
+            label: 'header.contact',
+            route: ''
+        },
+        {
+            label: 'header.about_me',
+            route: ''
+        },
+        {
+            label: 'header.language',
+            route: '',
+            children: [
+                {label: 'header.lang_spanish', value: 'es'},
+                {label: 'header.lang_english', value: 'en'},
+                {label: 'header.lang_valencian', value: 'ca'},
+            ]
+        },
+        {
+            label: 'header.log_in',
+            route: ''
+        },
+    ];
+
+    public showActionButtons = false;
 
     public selectedLangOption!: string;
 

@@ -18,5 +18,7 @@
             </app-dropdown>
             <app-button [text]="'header.log_in'" [color]="'primary'" [size]="'medium'"></app-button>
         </div>
+    } @else {
+        <app-burger-menu [menuItemsList]="burgerListOptions"></app-burger-menu>
     }
 </div>

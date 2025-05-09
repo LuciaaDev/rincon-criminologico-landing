@@ -1,0 +1,30 @@
+<div class="burger-container" (click)="toggleMenu()" [class.open]="isMenuOpen">
+    @for(barMenu of barMenuList; track barMenu) {
+        <div class="bar-menu"></div>
+    }
+
+    <nav class="menu" [class.open]="isMenuOpen">
+        <ul>
+            @for(menuItem of menuItemsList; track menuItem) {
+                <ng-container>
+                    <li>
+                        @if(!menuItem.children) {
+                            <a [routerLink]="menuItem.route">{{ menuItem.label | transloco }}</a>
+                        } @else if (menuItem.children) {
+                            <div (click)="toggleSubMenu(menuItem.label)">{{ menuItem.label | transloco }}</div>
+                            <!-- <span class="material-symbols-outlined">keyboard_arrow_down</span> -->
+
+                            @if(isExpandedItems(menuItem.label)) {
+                                <ul>
+                                    @for(childItem of menuItem.children; track childItem) {
+                                        <a>{{childItem.label | transloco }}</a>
+                                    }
+                                </ul>
+                            }
+                        }
+                    </li>
+                </ng-container>
+            }
+        </ul>
+    </nav>
+</div>

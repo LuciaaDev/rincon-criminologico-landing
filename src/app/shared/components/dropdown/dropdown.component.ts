@@ -1,7 +1,7 @@
 import { CommonModule } from "@angular/common";
-import { Component, Input, Output, EventEmitter, SimpleChanges } from "@angular/core";
+import { Component, Input, Output, EventEmitter } from "@angular/core";
 import { TranslocoModule } from "@jsverse/transloco";
-import { DropdownOptions } from "../../interfaces/dropdown.model";
+import { DropdownOptions } from "../../interfaces/shared-components.model";
 
 @Component({
     standalone: true,
