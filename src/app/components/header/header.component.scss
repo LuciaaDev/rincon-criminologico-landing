@@ -1,11 +1,13 @@
 .rincon-text {
+    @apply leading-none m-0;
     font-family: 'Merriweather';
 }
 
 .crim-text {
+    @apply leading-none m-0;
     font-family: 'Livvic Bold';
 }
 
 .action-buttons {
-    font-family: 'Livvic Bold';
+    font-family: 'Livvic Bold'; 
 }

@@ -20,6 +20,8 @@ export class HeaderComponent {
         {label: 'header.lang_valencian', value: 'ca'},
     ];
 
+    public showActionButtons = true;
+
     public selectedLangOption!: string;
 
     public activeLang = this._translocoService.getActiveLang();
