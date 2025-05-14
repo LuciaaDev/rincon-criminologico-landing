@@ -1,59 +1,91 @@
-.burger-container {
-    width: 30px;
-    height: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-  
-    .bar-menu {
-        height: 4px;
-        background-color: #333;
-        border-radius: 2px;
-        transition: 0.3s;
-    }
-  
-    &.open .bar-menu:nth-child(1) {
-        transform: rotate(45deg) translateY(10px);
-      }
-    
-      &.open .bar-menu:nth-child(2) {
-        opacity: 0;
-      }
-    
-      &.open .bar-menu:nth-child(3) {
-        transform: rotate(-45deg) translateY(-10px);
-      }
+:host {
+    display: block;
+
+  .burger-icon {
+    width: 2rem;
+    height: 2rem;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    opacity: 1;
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
   }
-  
-  .menu {
-    display: none;
-    flex-direction: column;
-    background: #f8f9fa;
-    width: 200px;
-    padding: 1rem;
-  
-    &.open {
-        display: block;
+
+  .menu-panel {
+    background-color: #275F7D;
+    position: absolute;
+    margin-top: 0.5rem;
+    right: 0px;
+    z-index: 50;
+    width: 8rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .menu-button {
+    width: 100%;
+    text-align: left;
+    color: #E7F1F7;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: block;
+  }
+
+  :hover.menu-button {
+    background-color: #C1DDEB;
+    color: #275F7D;
+    border-radius: 0.5rem;
+  }
+
+  .menu-options {
+
+  }
+
+  .menu-sub-options {
+
+  }
+
+  /* Tamaños */
+  &.small {
+    .burger-icon {
+      width: 1.25rem;
+      height: 1.25rem;
     }
 
-    ul {
-        list-style: none;
-        padding: 0;
-    
-        li {
-          padding: 0.5rem 0;
-    
-          ul {
-            padding-left: 1rem;
-          }
-    
-          a {
-            text-decoration: none;
-            color: #333;
-          }
-        }
+    .menu-button {
+      font-size: 0.875rem;
     }
-    
   }
-  
+
+  &.medium {
+    .menu-button {
+      font-size: 1rem;
+    }
+  }
+
+  &.large {
+    .burger-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .menu-button {
+      font-size: 1.25rem;
+    }
+  }
+
+  /* Colores */
+  &.primary {
+    .menu-button {
+      color: #fff;
+      background-color: #1d4ed8;
+    }
+
+    .menu-button:hover {
+      background-color: #1e40af;
+    }
+  }
+}

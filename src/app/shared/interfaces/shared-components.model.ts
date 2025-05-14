@@ -5,13 +5,7 @@ export interface DropdownOptions {
 
 export interface BurgerMenuItem {
     label: string;
-    route?: string;
-    children?: BurgerSubMenuItem[];
-}
-
-export interface BurgerSubMenuItem {
-    label: string,
-    value?: any,
-    route?: string;
-    children?: BurgerSubMenuItem[]
+    type?: 'link' | 'dropdown';
+    action?: () => void;
+    children?: BurgerMenuItem[];
 }

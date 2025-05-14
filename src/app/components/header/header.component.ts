@@ -3,7 +3,7 @@ import { Router } from "@angular/router";
 import { TranslocoModule, TranslocoService } from "@jsverse/transloco";
 import { ButtonComponent } from "../../shared/components/button/button.component";
 import { DropdownComponent } from "../../shared/components/dropdown/dropdown.component";
-import { BurgerSubMenuItem } from "../../shared/interfaces/shared-components.model";
+import { BurgerMenuItem } from "../../shared/interfaces/shared-components.model";
 import { BurgerMenuComponent } from "src/app/shared/components/burger-menu/burger-menu.component";
 
 @Component({
@@ -26,27 +26,30 @@ export class HeaderComponent {
         {label: 'header.lang_valencian', value: 'ca'},
     ];
 
-    public burgerListOptions: BurgerSubMenuItem[] = [
+    public burgerListOptions: BurgerMenuItem[] = [
         {
             label: 'header.contact',
-            route: ''
+            type: 'link',
+            action: () => console.log('Contacto'),
         },
         {
             label: 'header.about_me',
-            route: ''
+            type: 'link',
+            action: () => console.log('Sobre mí'),
         },
         {
             label: 'header.language',
-            route: '',
+            type: 'dropdown',
             children: [
-                {label: 'header.lang_spanish', value: 'es'},
-                {label: 'header.lang_english', value: 'en'},
-                {label: 'header.lang_valencian', value: 'ca'},
+                {label: 'header.lang_spanish', action: () => this.getTranslation('es')},
+                {label: 'header.lang_english', action: () => this.getTranslation('en')},
+                {label: 'header.lang_valencian', action: () => this.getTranslation('ca')},
             ]
         },
         {
             label: 'header.log_in',
-            route: ''
+            type: 'link',
+            action: () => console.log('Accede'),
         },
     ];
 

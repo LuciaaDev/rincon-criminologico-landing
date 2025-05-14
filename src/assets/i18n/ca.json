@@ -11,5 +11,8 @@
         "lang_english": "Anglés",
         "lang_valencian": "Valencià",
         "log_in": "Accedix"
+    },
+    "prueba": {
+        "messg": "Hola Món"
     }
 }

@@ -11,5 +11,8 @@
         "lang_english": "Inglés",
         "lang_valencian": "Valenciano",
         "log_in": "Accede"
+    },
+    "prueba": {
+        "messg": "Hola Mundo"
     }
 }
