@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component } from "@angular/core";
+import { ChangeDetectorRef, Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { TranslocoModule, TranslocoService } from "@jsverse/transloco";
 import { ButtonComponent } from "../../shared/components/button/button.component";
@@ -18,7 +18,7 @@ import { BurgerMenuComponent } from "src/app/shared/components/burger-menu/burge
     templateUrl: './header.component.html',
     styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 
     public languageOptions = [
         {label: 'header.lang_spanish', value: 'es'},
@@ -60,12 +60,17 @@ export class HeaderComponent {
     public activeLang = this._translocoService.getActiveLang();
     
     constructor(
-        private _router: Router,
-        private _translocoService: TranslocoService,
-        private _changeDetectorRef: ChangeDetectorRef
+        private readonly _router: Router,
+        private readonly _translocoService: TranslocoService,
+        private readonly _changeDetectorRef: ChangeDetectorRef
     ) {}
 
+    ngOnInit(): void {
+        this.checkScreenSize();
+    }
+
     /**
+     * goToHomeLanding
      * To go to home landing clicking on logo.
      */
     public goToHomeLanding(): void {
@@ -73,6 +78,7 @@ export class HeaderComponent {
     }
 
     /** 
+     * getTranslation
      * To translate web page clicking on a language option
     */
     public getTranslation(lang: string): void {
@@ -81,5 +87,14 @@ export class HeaderComponent {
         this.activeLang = lang;
 
         this._changeDetectorRef.detectChanges();
+    }
+
+    /**
+     * checkScreenSize
+     * To show action buttons or burger menu depending on 
+     * the size of the screen.
+     */
+    public checkScreenSize(): void {
+        this.showActionButtons = window.innerWidth >= 1201;
     }
 }

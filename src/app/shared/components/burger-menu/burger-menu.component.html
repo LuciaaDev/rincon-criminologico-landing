@@ -1,38 +1,44 @@
-<div [ngClass]="[color, size]">
+<div>
     <div class="p-2 relative" (click)="toggleMenu()">
         @if(!isMenuOpen) {
-            <img src="../../../../assets/icons/burger-menu.svg" 
-            class="burger-icon inset-0">
+            <img src="../../../../assets/icons/burger-menu.svg" alt="burger-menu"
+            class="inset-0 w-8 h-8 transition-all opacity-100 scale-100">
         } @else {
-            <img src="../../../../assets/icons/close.svg" 
-            class="burger-icon inset-0">
+            <img src="../../../../assets/icons/close.svg" alt="close"
+            class="inset-0 w-8 h-8 transition-all opacity-100 scale-100">
         }
     </div>
 
-    <!-- Dropdown menu -->
      @if(isMenuOpen) {
-        <div class="menu-panel">
+        <div class="bg-baseRCBlueSeventh absolute mt-2 z-50 w-32 right-0 rounded-lg shadow">
             @for(menuItem of menuItemsList; track menuItem) {
                 @if(menuItem.type === 'dropdown') {
-                    <div class="menu-button">
-                        <button class="menu-options"
-                        (click)="toggleSubMenu(menuItem.label)">{{menuItem.label | transloco}}</button>
+                    <div class="w-full text-left text-baseRCBlueFirst px-4 py-2 block">
+                        <div class="flex" (click)="activateDropdownOption(menuItem.label)">
+                            <button class="menu-options"
+                            >{{menuItem.label | transloco}}</button>
+                            @if(activeDropdownOption !== menuItem.label) {
+                                <img src="../../../../assets/icons/keyboard-arrow-down.svg" alt="arrow-down">
+                            } @else if(activeDropdownOption === menuItem.label) {
+                                <img src="../../../../assets/icons/keyboard-arrow-up.svg" alt="arrow-up">
+                            }
+                        </div>
                         @if(activeDropdownOption === menuItem.label) {
+                            <hr class="h-px bg-baseRCBlueFirst border-0">
                             <div class="menu-sub-options">
                                 @for(menuSubItem of menuItem.children; track menuSubItem) {
                                     <button class=""
-                                    (click)="menuSubItem.action?.(); toggleMenu()">{{menuSubItem.label | transloco}}</button>
+                                    (click)="menuSubItem.action?.(); toggleMenu();">{{menuSubItem.label | transloco}}</button>
                                 }
                             </div>
                         }
                     </div>
                 } 
                 @if (menuItem.type !== 'dropdown'){
-                    <button class="menu-button"
+                    <button class="w-full text-left text-baseRCBlueFirst px-4 py-2 block "
                     (click)="menuItem.action?.(); toggleMenu()">{{menuItem.label | transloco}}</button>
                 }
             }
         </div>
-
-     }
+    }
 </div>
