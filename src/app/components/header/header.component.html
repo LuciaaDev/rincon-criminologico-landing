@@ -1,10 +1,10 @@
-<div class="header-container bg-baseRCBlueNinth flex justify-between h-[50px] md:h-[60px] lg:h-[80px]">
-    <div class="logo-container w-[165px] h-[40px] pt-1.5 pr-1 pl-2 flex flex-col justify-start cursor-pointer md:w-[175px] h-[45px] mt-1.5 lg:w-[200px] h-[50px]" (click)="goToHomeLanding()">
-        <p class="rincon-text text-baseRCBlueFirst text-lg font-bold md:text-xl lg:text-2xl">{{"logo.rincon" | transloco }}</p>
-        <p class="crim-text text-baseRCBlueFirst text-lg md:text-xl lg:text-2xl">{{"logo.criminologico" | transloco }}</p>
+<div class="header-container bg-baseRCBlueNinth flex justify-between items-center h-[50px] px-2">
+    <div class="logo-container w-[165px] h-[40px] flex flex-col justify-start cursor-pointer pt-0.5" (click)="goToHomeLanding()">
+        <p class="rincon-text text-baseRCBlueFirst text-lg font-bold">{{"logo.rincon" | transloco }}</p>
+        <p class="crim-text text-baseRCBlueFirst text-lg">{{"logo.criminologico" | transloco }}</p>
       </div>
     @if (showActionButtons) {
-        <div class="action-buttons w-[550px] flex justify-between text-lg pr-4 mt-4">
+        <div class="action-buttons w-[280px] flex justify-between text-sm">
             <app-button [text]="'header.contact'" [color]="'primary'" [size]="'medium'"></app-button>
             <app-button [text]="'header.about_me'" [color]="'primary'" [size]="'medium'"></app-button>
             <app-dropdown 
@@ -16,9 +16,8 @@
             [disabledSelectedHiddenText]="'header.language'"
             (selectionChange)="getTranslation($event)">
             </app-dropdown>
-            <app-button [text]="'header.log_in'" [color]="'primary'" [size]="'medium'"></app-button>
         </div>
     } @else if (!showActionButtons) {
-        <app-burger-menu [menuItemsList]="burgerListOptions"></app-burger-menu>
+        <app-burger-menu class="text-sm" [menuItemsList]="burgerListOptions"></app-burger-menu>
     }
 </div>

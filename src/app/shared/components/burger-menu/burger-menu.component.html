@@ -25,7 +25,7 @@
                         </div>
                         @if(activeDropdownOption === menuItem.label) {
                             <hr class="h-px bg-baseRCBlueFirst border-0">
-                            <div class="menu-sub-options">
+                            <div class="flex flex-col justify-start items-start">
                                 @for(menuSubItem of menuItem.children; track menuSubItem) {
                                     <button class=""
                                     (click)="menuSubItem.action?.(); toggleMenu();">{{menuSubItem.label | transloco}}</button>

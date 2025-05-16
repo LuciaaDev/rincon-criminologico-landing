@@ -9,8 +9,7 @@
         "language": "Language",
         "lang_spanish": "Spanish",
         "lang_english": "English",
-        "lang_valencian": "Valencian",
-        "log_in": "Log in"
+        "lang_valencian": "Valencian"
     },
     "prueba": {
         "messg": "Hello World"

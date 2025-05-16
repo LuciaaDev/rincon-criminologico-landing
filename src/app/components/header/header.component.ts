@@ -45,12 +45,7 @@ export class HeaderComponent implements OnInit {
                 {label: 'header.lang_english', action: () => this.getTranslation('en')},
                 {label: 'header.lang_valencian', action: () => this.getTranslation('ca')},
             ]
-        },
-        {
-            label: 'header.log_in',
-            type: 'link',
-            action: () => console.log('Accede'),
-        },
+        }
     ];
 
     public showActionButtons = false;
@@ -95,6 +90,6 @@ export class HeaderComponent implements OnInit {
      * the size of the screen.
      */
     public checkScreenSize(): void {
-        this.showActionButtons = window.innerWidth >= 1201;
+        this.showActionButtons = window.innerWidth >= 1024;
     }
 }
