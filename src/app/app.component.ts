@@ -11,15 +11,13 @@ import { HomeComponent } from './pages/home/home.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'rincon-criminologico-landing';
 
   public browserLang!: string;
   public supportedLangs!: string[];
   public langToSet!: string;
   
-  // TODO: Fix error in browser console
   constructor(
-    private _translocoService: TranslocoService
+    private readonly _translocoService: TranslocoService
   ) {
     this.setLanguage();
   }
@@ -32,5 +30,5 @@ export class AppComponent {
     this.supportedLangs = ['es', 'en', 'ca'];
     this.langToSet = this.supportedLangs.includes(this.browserLang) ? this.browserLang : 'es';
     this._translocoService.setActiveLang(this.langToSet);
-}
+  }
 }
