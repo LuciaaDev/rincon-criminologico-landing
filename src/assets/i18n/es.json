@@ -1,3 +1,17 @@
 {
-    "hello-world": "Hola Mundo"
+    "logo": {
+        "rincon": "Rincón",
+        "criminologico": "CRIMINOLÓGICO"
+    },
+    "header": {
+        "contact": "Contacto",
+        "about_me": "Sobre mí",
+        "language": "Idioma",
+        "lang_spanish": "Español",
+        "lang_english": "Inglés",
+        "lang_valencian": "Valenciano"
+    },
+    "prueba": {
+        "messg": "Hola Mundo"
+    }
 }

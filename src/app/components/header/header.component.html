@@ -1,0 +1,23 @@
+<div class="header-container bg-baseRCBlueNinth flex justify-between items-center h-[50px] px-2">
+    <div class="logo-container w-[165px] h-[40px] flex flex-col justify-start cursor-pointer pt-0.5" (click)="goToHomeLanding()">
+        <p class="rincon-text text-baseRCBlueFirst text-lg font-bold">{{"logo.rincon" | transloco }}</p>
+        <p class="crim-text text-baseRCBlueFirst text-lg">{{"logo.criminologico" | transloco }}</p>
+      </div>
+    @if (showActionButtons) {
+        <div class="action-buttons w-[280px] flex justify-between text-sm">
+            <app-button [text]="'header.contact'" [color]="'primary'" [size]="'medium'"></app-button>
+            <app-button [text]="'header.about_me'" [color]="'primary'" [size]="'medium'"></app-button>
+            <app-dropdown 
+            [optionsList]="languageOptions" 
+            [color]="'primary'" 
+            [size]="'medium'"
+            [selectedOption]="selectedLangOption"
+            [isDisabledSelectedHidden]="true"
+            [disabledSelectedHiddenText]="'header.language'"
+            (selectionChange)="getTranslation($event)">
+            </app-dropdown>
+        </div>
+    } @else if (!showActionButtons) {
+        <app-burger-menu class="text-sm" [menuItemsList]="burgerListOptions"></app-burger-menu>
+    }
+</div>

@@ -1,0 +1,40 @@
+.select-content {
+    border-width: 1px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    outline: none;
+
+    &.small {
+        
+    }
+
+    &.medium {
+        width: 80px;
+        height: 30px;
+    }
+
+    &.large {
+
+    }
+
+
+    &.primary {
+        background-color: #224558;
+        color: #e7f1f7;
+        border-color: #e7f1f7;
+        text-align: center;
+        text-align-last: center;
+    }
+
+    &:disabled {
+        background-color: #f0f0f0;
+        color: #989898;
+        border-color: #bdbdbd;
+        cursor: not-allowed;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
