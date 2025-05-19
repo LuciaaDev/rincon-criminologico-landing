@@ -1,7 +1,8 @@
 <div class="blue-content">
+    <!-- Slogan Content -->
     <div class="slogan-container flex">
         <div class="welcome-container w-1/2 flex flex-col justify-start items-start p-14">
-            <p class="red-title mb-2">{{"home.slogan.title_slogan" | transloco}}</p>
+            <p class="red-title mb-2 text-base lg:text-lg">{{"home.slogan.title_slogan" | transloco}}</p>
             <p class="mb-2">{{"home.slogan.intro_slogan" | transloco}}</p>
             <app-button [text]="'home.slogan.btn_slogan'" [color]="'secondary'" [size]="'large'"></app-button>
         </div>
@@ -9,4 +10,9 @@
             <img src="../../../assets/images/home-slogan.png" alt="home-slogan">
         </div>
     </div>
+    
+    <!-- Information access -->
+     <div class="info-access-container pt-8 flex flex-col justify-center items-center">
+        <p class="red-title text-base">{{"home.info_access.title_info" | transloco}}</p>
+     </div>
 </div>
