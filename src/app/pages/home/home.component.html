@@ -1,12 +1,12 @@
-<div class="home-container">
-    <div class="slogan-container">
-        <div class="welcome-container">
-            <h3>{{"home.slogan.title_slogan" | transloco}}</h3>
-            <p>{{"home.slogan.intro_slogan" | transloco}}</p>
-            <button>{{"home.slogan.btn_slogan" | transloco}}</button>
+<div class="blue-content">
+    <div class="slogan-container flex">
+        <div class="welcome-container w-1/2 flex flex-col justify-start items-start p-14">
+            <p class="red-title mb-2">{{"home.slogan.title_slogan" | transloco}}</p>
+            <p class="mb-2">{{"home.slogan.intro_slogan" | transloco}}</p>
+            <app-button [text]="'home.slogan.btn_slogan'" [color]="'secondary'" [size]="'large'"></app-button>
         </div>
-        <div class="image-container">
-            
+        <div class="image-container w-1/2">
+            <img src="../../../assets/images/home-slogan.png" alt="home-slogan">
         </div>
     </div>
 </div>
