@@ -11,7 +11,40 @@
         "lang_english": "Anglés",
         "lang_valencian": "Valencià"
     },
-    "prueba": {
-        "messg": "Hola Món"
+    "home": {
+        "slogan": {
+            "title_slogan": "La Criminologia al teu abast",
+            "intro_slogan": "Benvingut a Rincón Criminológico! Un espai de divulgació criminològica que té com a objectiu ensenyar-te de forma fàcil en què consistix aquesta ciència i la seua importància en la societat.",
+            "btn_slogan": "Vull saber més"
+        },
+        "info_access": {
+            "title_info": "Accedix a tota aquesta informació",
+            "title_articles": "Articles criminològics",
+            "explain_articles": "Aprén de manera senzilla sobre diversos temes d'interés criminològic.",
+            "btn_know_more": "Saber més",
+            "title_news": "Notícies i actualitat",
+            "explain_news": "Informa't mitjançant anàlisis criminològiques sobre esdeveniments rellevants del moment.",
+            "title_reflections": "Reflexions",
+            "explain_reflections": "Gaudix d'un espai per a profunditzar en questions relacionades amb la Criminologia."
+        },
+        "content": {
+            "title_content": "Si t'interesa la Criminologia, has arribat al lloc adequat",
+            "explain_free_content": "Rincón Criminológico és un espai l'objectiu del qual és apropar la Criminologia a qualsevol persona, per això oferix <bold>contingut GRATUÏT</bold>.",
+            "btn_free_content": "Contingut GRATUÏT",
+            "explain_premium_content": "Si vols accedir al <bold>contingut PREMIUM</bold>, en cada publicació podràs descarregar un PDF amb tota la informació al complet por només:",
+            "prize_premium_content": "12€",
+            "btn_premium_content": "Contingut PREMIUM"
+        },
+        "find": {
+            "title_find": "Què trobaràs en Rincón Criminológico?",
+            "first_card": "Accés tant a contingut GRATUÏT com PREMIUM",
+            "second_card": "Material basat en rigor científic",
+            "third_card": "Un espai creat des de zero per Lucía Ruiz Martínez, criminòloga i programadora web",
+            "fourth_card": "El lloc que t'ensenya i et convida a la reflexió i al pensament crític al mateix temps"
+        },
+        "questions": {
+            "title_questions": "Tens preguntes? Ací pots resoldre-les",
+            "frequent_questions": "Preguntes freqüents"
+        }   
     }
 }

@@ -11,7 +11,40 @@
         "lang_english": "English",
         "lang_valencian": "Valencian"
     },
-    "prueba": {
-        "messg": "Hello World"
+    "home": {
+        "slogan": {
+            "title_slogan": "Criminology within your reach",
+            "intro_slogan": "Welcome to Rincón Criminológico! A space for the dissemination of criminology that aims to teach you in an easy way what this science consists of and its importance in society.",
+            "btn_slogan": "I want to know more"
+        },
+        "info_access": {
+            "title_info": "Access all this information",
+            "title_articles": "Criminological articles",
+            "explain_articles": "Learn about diverse aims of criminological interest in an easy way.",
+            "btn_know_more": "Know more",
+            "title_news": "News and events",
+            "explain_news": "Find out about relevant current events through criminological analysis.",
+            "title_reflections": "Reflections",
+            "explain_reflections": "A space to go deeper into issues related with Criminology."
+        },
+        "content": {
+            "title_content": "If you have interest in Criminology, you have arrived in the right place",
+            "explain_free_content": "Rincón Criminológico is a space that its objective is to approach Criminology to everybody, as it offers <bold>FREE content</bold>.",
+            "btn_free_content": "FREE content",
+            "explain_premium_content": "If you want to access to <bold>PREMIUM content</bold>, in each post you could download a PDF with all the complete information for only:",
+            "prize_premium_content": "12€",
+            "btn_premium_content": "PREMIUM content"
+        },
+        "find": {
+            "title_find": "What will you find in Rincón Criminológico?",
+            "first_card": "Access to FREE and PREMIUM content",
+            "second_card": "Material based on scientific rigour",
+            "third_card": "A space created from scratch by Lucía Ruiz Martínez, criminologist and web developer",
+            "fourth_card": "The place that teaches you and invites you to reflect and think critically at the same time"
+        },
+        "questions": {
+            "title_questions": "Have you any questions? You could resolve them here",
+            "frequent_questions": "Frequent questions"
+        }   
     }
 }
