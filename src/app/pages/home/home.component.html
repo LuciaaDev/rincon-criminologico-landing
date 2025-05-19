@@ -1,14 +1,16 @@
 <div class="blue-content">
     <!-- Slogan Content -->
     <div class="slogan-container flex">
-        <div class="welcome-container w-1/2 flex flex-col justify-start items-start p-14">
-            <p class="red-title mb-2 text-base lg:text-lg">{{"home.slogan.title_slogan" | transloco}}</p>
-            <p class="mb-2">{{"home.slogan.intro_slogan" | transloco}}</p>
-            <app-button [text]="'home.slogan.btn_slogan'" [color]="'secondary'" [size]="'large'"></app-button>
+        <div class="welcome-container flex flex-col p-2 justify-center md:justify-start md:items-start md:p-7 md:w-1/2 lg:justify-start lg:items-start lg:p-14 lg:w-1/2">
+            <p class="red-title text-base mb-2 lg:text-lg">{{"home.slogan.title_slogan" | transloco}}</p>
+            <p class="mb-3 md:mb-2 lg:mb-2">{{"home.slogan.intro_slogan" | transloco}}</p>
+            <app-button class="flex justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start" [text]="'home.slogan.btn_slogan'" [color]="'secondary'" [size]="'large'"></app-button>
         </div>
-        <div class="image-container w-1/2">
-            <img src="../../../assets/images/home-slogan.png" alt="home-slogan">
-        </div>
+        @if(showSloganImg) {
+            <div class="image-container w-1/2">
+                <img src="../../../assets/images/home-slogan.png" alt="home-slogan">
+            </div>
+        }
     </div>
     
     <!-- Information access -->
