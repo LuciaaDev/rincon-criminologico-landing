@@ -1,0 +1,100 @@
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    
+    &.small {
+
+    }
+
+    &.medium {
+
+        .card-title {
+            font-size: 14px;
+        }
+
+        .line-title {
+            height: 1px;
+        }
+
+        .card-text {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .btn-content {
+            border-width: 1px;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            height: 30px;
+            width: 120px;
+            font-size: 12px;
+        }
+    }
+
+    &.large {
+
+    }
+
+    &.primary {
+        border-color: #224558;
+        background-color: #C1DDEB;
+
+        .card-title {
+            color: #8C2538;
+            font-family: 'Merriweather';
+            font-weight: bold;
+        }
+
+        .line-title {
+            border-color: #8C2538;
+        }
+
+        .card-text {
+            color: #224558;
+            font-family: 'Livvic Regular';
+        }
+
+        .btn-content {
+            background-color: #8c2538;
+            color: #FBE9E8;
+            border-color: #8c2538;
+            font-family: 'Livvic Bold';
+        }
+    }
+
+    @media (max-width: 767px) {
+        &.medium {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 1rem;
+
+            .icon-card {
+                padding-bottom: 0.25rem;
+                width: 52px;
+                height: 54px;
+            }
+
+            .card-title {
+                padding-bottom: 0.25rem;
+            }
+
+            .line-title {
+                padding-bottom: 0.25rem;
+                width: 60%;
+            }
+
+            .card-text {
+                padding-bottom: 0.25rem;
+            }
+
+            .btn-content {
+                width: 75px;
+                height: 25px;
+            }
+        } 
+    }
+}

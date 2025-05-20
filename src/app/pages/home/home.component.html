@@ -1,20 +1,34 @@
-<div class="blue-content">
+<div>
     <!-- Slogan Content -->
-    <div class="slogan-container flex">
-        <div class="welcome-container flex flex-col p-2 justify-center md:justify-start md:items-start md:p-7 md:w-1/2 lg:justify-start lg:items-start lg:p-14 lg:w-1/2">
-            <p class="red-title text-base mb-2 lg:text-lg">{{"home.slogan.title_slogan" | transloco}}</p>
-            <p class="mb-3 md:mb-2 lg:mb-2">{{"home.slogan.intro_slogan" | transloco}}</p>
-            <app-button class="flex justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start" [text]="'home.slogan.btn_slogan'" [color]="'secondary'" [size]="'large'"></app-button>
+    <div class="flex">
+        <div class="flex flex-col p-2 justify-center md:items-start md:py-7 md:px-3 md:w-1/2 lg:items-start lg:py-14 lg:px-20 lg:w-1/2">
+            <p class="red-title text-base mb-2 md:justify-start md:items-start lg:justify-start lg:items-start lg:text-lg">{{"home.slogan.title_slogan" | transloco}}</p>
+            <p class="blue-content mb-3 md:justify-start md:items-start md:mb-2 lg:justify-start lg:items-start lg:mb-2">{{"home.slogan.intro_slogan" | transloco}}</p>
+            <app-button class="flex justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start" 
+            [text]="'home.slogan.btn_slogan'" [color]="'secondary'" [size]="'large'"></app-button>
         </div>
         @if(showSloganImg) {
-            <div class="image-container w-1/2">
-                <img src="../../../assets/images/home-slogan.png" alt="home-slogan">
+            <div class="image-container w-1/2 flex justify-center items-center p-3">
+                <img class="rounded-lg" src="../../../assets/images/home-slogan.png" alt="home-slogan">
             </div>
         }
     </div>
     
     <!-- Information access -->
-     <div class="info-access-container pt-8 flex flex-col justify-center items-center">
-        <p class="red-title text-base">{{"home.info_access.title_info" | transloco}}</p>
-     </div>
+     <div class="py-8 flex flex-col justify-center items-center">
+        <p class="red-title text-base pb-6">{{"home.info_access.title_info" | transloco}}</p>
+        <div>
+            <app-card [hasIcon]="true" [iconUrl]="brainIconUrl" [cardTitle]="'home.info_access.title_articles'" 
+            [cardText]="'home.info_access.explain_articles'" [cardColor]="'primary'" 
+            [cardSize]="'medium'" [buttonText]="'home.info_access.btn_know_more'"></app-card>
+            
+            <app-card [hasIcon]="true" [iconUrl]="newsIconUrl" [cardTitle]="'home.info_access.title_news'" 
+            [cardText]="'home.info_access.explain_news'" [cardColor]="'primary'" 
+            [cardSize]="'medium'" [buttonText]="'home.info_access.btn_know_more'"></app-card>
+
+            <app-card [hasIcon]="true" [iconUrl]="reflectionIconUrl" [cardTitle]="'home.info_access.title_reflections'" 
+            [cardText]="'home.info_access.explain_reflections'" [cardColor]="'primary'" 
+            [cardSize]="'medium'" [buttonText]="'home.info_access.btn_know_more'"></app-card>
+        </div>
+    </div>
 </div>

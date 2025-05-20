@@ -1,10 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 import { TranslocoModule } from "@jsverse/transloco";
 import { ButtonComponent } from "../../shared/components/button/button.component";
+import { CardComponent } from "../../shared/components/card/card.component";
 
 @Component({
     standalone: true,
-    imports: [TranslocoModule, ButtonComponent],
+    imports: [TranslocoModule, ButtonComponent, CardComponent],
     selector: 'app-home',
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss'
@@ -12,6 +13,10 @@ import { ButtonComponent } from "../../shared/components/button/button.component
 export class HomeComponent implements OnInit {
 
     public showSloganImg = false;
+
+    public brainIconUrl = '../../../assets/icons/brain-red.svg';
+    public newsIconUrl = '../../../assets/icons/news-red.svg';
+    public reflectionIconUrl = '../../../assets/icons/reflection-red.svg';
 
     ngOnInit(): void {
         this.checkScreenSize();
