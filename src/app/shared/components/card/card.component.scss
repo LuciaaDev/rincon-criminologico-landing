@@ -32,6 +32,7 @@
             height: 30px;
             width: 120px;
             font-size: 12px;
+            transition: all 0.3s ease;
         }
     }
 
@@ -63,6 +64,11 @@
             color: #FBE9E8;
             border-color: #8c2538;
             font-family: 'Livvic Bold';
+        }
+
+        .btn-content:hover {
+            background-color: #FBE9E8;
+            color: #8c2538;
         }
     }
 
