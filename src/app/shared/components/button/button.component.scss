@@ -2,6 +2,7 @@
     border-width: 1px;
     border-radius: 0.5rem;
     cursor: pointer;
+    transition: all 0.3s ease;
 
     &.small {
         
@@ -31,6 +32,11 @@
         border-color: #8c2538;
         font-family: 'Livvic Bold';
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    &.secondary:hover {
+        background-color: #FBE9E8;
+        color: #8c2538;
     }
 
     &:disabled {
