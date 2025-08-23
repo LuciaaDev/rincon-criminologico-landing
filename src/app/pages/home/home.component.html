@@ -15,9 +15,9 @@
     </div>
     
     <!-- Information access -->
-     <div class="py-8 flex flex-col justify-center items-center sm:pt-1">
-        <p class="red-title text-base pb-6">{{"home.info_access.title_info" | transloco}}</p>
-        <div>
+     <div class="py-1 flex flex-col justify-center items-center">
+        <p class="red-title text-base pb-6 lg:text-lg">{{"home.info_access.title_info" | transloco}}</p>
+        <div class="md:flex lg:flex">
             <app-card [hasIcon]="true" [iconUrl]="brainIconUrl" [cardTitle]="'home.info_access.title_articles'" 
             [cardText]="'home.info_access.explain_articles'" [cardColor]="'primary'" 
             [cardSize]="'medium'" [buttonText]="'home.info_access.btn_know_more'"></app-card>
