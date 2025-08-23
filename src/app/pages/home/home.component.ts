@@ -13,6 +13,7 @@ import { CardComponent } from "../../shared/components/card/card.component";
 export class HomeComponent implements OnInit {
 
     public showSloganImg = false;
+    public screenSize = 768;
 
     public brainIconUrl = '../../../assets/icons/brain-red.svg';
     public newsIconUrl = '../../../assets/icons/news-red.svg';
@@ -28,6 +29,6 @@ export class HomeComponent implements OnInit {
      * the size of the screen.
      */
     public checkScreenSize(): void {
-        this.showSloganImg = window.innerWidth >= 768;
+        this.showSloganImg = window.innerWidth >= this.screenSize;
     }
 }
