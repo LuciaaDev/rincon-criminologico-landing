@@ -7,7 +7,7 @@
             <app-button class="flex justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start" 
             [text]="'home.slogan.btn_slogan'" [color]="'secondary'" [size]="'large'"></app-button>
         </div>
-        @if(showSloganImg) {
+        @if(showHomeImgs) {
             <div class="image-container w-1/2 flex justify-center items-center p-3">
                 <img class="rounded-lg" src="../../../assets/images/home-slogan.png" alt="home-slogan">
             </div>
@@ -15,7 +15,7 @@
     </div>
     
     <!-- Information access -->
-     <div class="py-1 flex flex-col justify-center items-center">
+     <div class="flex flex-col justify-center items-center py-4">
         <p class="red-title text-base pb-6 lg:text-lg">{{"home.info_access.title_info" | transloco}}</p>
         <div class="md:flex lg:flex">
             <app-card [hasIcon]="true" [iconUrl]="brainIconUrl" [cardTitle]="'home.info_access.title_articles'" 
@@ -31,4 +31,29 @@
             [cardSize]="'medium'" [buttonText]="'home.info_access.btn_know_more'"></app-card>
         </div>
     </div>
+
+    <!-- Free and Premium Content -->
+     <div class="flex py-4">
+        @if(showHomeImgs) {
+            <div class="image-container w-1/2 flex justify-center items-center p-3">
+                <img class="rounded-lg" src="../../../assets/images/home-content.jpg" alt="home-content">
+            </div>
+        }
+        <div class="lg:w-1/2 lg:p-3">
+            <p class="red-title text-base lg:pb-3 lg:text-lg">{{"home.content.title_content" | transloco}}</p>
+            <p class="blue-content mb-3 md:justify-start md:items-start md:mb-2 lg:justify-start lg:items-start lg:pb-3" 
+                [innerHTML]="'home.content.explain_free_content' | transloco"></p>
+            <app-button class="flex justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start lg:pb-6" 
+            [text]="'home.content.btn_free_content'" [color]="'secondary'" [size]="'large'"></app-button>
+            
+            <hr class="line-content lg:pb-6">
+
+            <p class="blue-content mb-3 md:justify-start md:items-start md:mb-2 lg:justify-start lg:items-start lg:pb-3" 
+                [innerHTML]="'home.content.explain_premium_content' | transloco"></p>
+            <div id="prize">{{"home.content.prize_premium_content" | transloco}}</div>
+            
+                <app-button class="flex justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start lg:pb-6" 
+            [text]="'home.content.btn_premium_content'" [color]="'secondary'" [size]="'large'"></app-button>
+        </div>
+     </div>
 </div>

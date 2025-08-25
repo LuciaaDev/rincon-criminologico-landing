@@ -29,9 +29,9 @@
         },
         "content": {
             "title_content": "Si te interesa la Criminología, has llegado al lugar adecuado",
-            "explain_free_content": "Rincón Criminológico es un espacio cuyo objetivo es acercar la Criminología a cualquier persona, por eso ofrece <bold>contenido GRATUITO</bold>.",
+            "explain_free_content": "Rincón Criminológico es un espacio cuyo objetivo es acercar la Criminología a cualquier persona, por eso ofrece <strong>contenido GRATUITO</strong>.",
             "btn_free_content": "Contenido GRATUITO",
-            "explain_premium_content": "Si quieres acceder al <bold>contenido PREMIUM</bold>, en cada publicación podrás descargar un PDF con toda la información al completo por solo:",
+            "explain_premium_content": "Si quieres acceder al <strong>contenido PREMIUM</strong>, en cada publicación podrás descargar un PDF con toda la información al completo por solo:",
             "prize_premium_content": "12€",
             "btn_premium_content": "Contenido PREMIUM"
         },
