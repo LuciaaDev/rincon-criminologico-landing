@@ -14,6 +14,8 @@ export class HomeComponent implements OnInit {
 
     public showHomeImgs = false;
     public screenSize = 768;
+    public prize = 12;
+    public euroSymbol = '€';
 
     public brainIconUrl = '../../../assets/icons/brain-red.svg';
     public newsIconUrl = '../../../assets/icons/news-red.svg';

@@ -33,7 +33,7 @@
     </div>
 
     <!-- Free and Premium Content -->
-     <div class="flex py-4">
+    <div class="flex py-4 px-3">
         @if(showHomeImgs) {
             <div class="image-container w-1/2 flex justify-center items-center p-3">
                 <img class="rounded-lg" src="../../../assets/images/home-content.jpg" alt="home-content">
@@ -43,16 +43,20 @@
             <p class="red-title text-base lg:pb-3 lg:text-lg">{{"home.content.title_content" | transloco}}</p>
             <p class="blue-content mb-3 md:justify-start md:items-start md:mb-2 lg:justify-start lg:items-start lg:pb-3" 
                 [innerHTML]="'home.content.explain_free_content' | transloco"></p>
-            <app-button class="flex justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start lg:pb-6" 
+            <app-button class="flex justify-center items-center mb-3 md:justify-start md:items-start lg:justify-start lg:items-start lg:pb-6" 
             [text]="'home.content.btn_free_content'" [color]="'secondary'" [size]="'large'"></app-button>
             
-            <hr class="line-content lg:pb-6">
+            <hr class="line-content mb-3 lg:pb-6">
 
             <p class="blue-content mb-3 md:justify-start md:items-start md:mb-2 lg:justify-start lg:items-start lg:pb-3" 
                 [innerHTML]="'home.content.explain_premium_content' | transloco"></p>
-            <div id="prize">{{"home.content.prize_premium_content" | transloco}}</div>
             
-                <app-button class="flex justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start lg:pb-6" 
+            <div class="flex justify-center items-center bg-[#C1DDEB] border border-[#224558] w-14 h-14 rounded-full mb-3 mx-auto md:justify-start lg:justify-start">
+                <span class="text-lg text-[#8c2538] font-bold">{{prize}}</span>
+                <span class="text-base text-[#8c2538] font-bold mt-[5%]">{{euroSymbol}}</span>
+            </div>
+            
+            <app-button class="flex justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start lg:pb-6" 
             [text]="'home.content.btn_premium_content'" [color]="'secondary'" [size]="'large'"></app-button>
         </div>
      </div>
