@@ -42,6 +42,14 @@
 
     }
 
+    &.circle {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        padding: 0.5rem;
+        transition: all 0.3s ease;
+    }
+
     &.primary {
         border-color: #224558;
         background-color: #C1DDEB;
@@ -81,6 +89,28 @@
         .card-text {
             color: #224558;
             font-family: 'Livvic Bold';
+        }
+    }
+
+    &.tertiary {
+        border-color: #224558;
+        background-color: #C1DDEB;
+        cursor: pointer;
+
+        .card-text {
+            color: #224558;
+            font-family: 'Livvic Bold';
+            text-align: center;
+        }
+    }
+
+    &.tertiary:hover {
+        .icon-card {
+            color: #224558;
+        }
+
+        .card-text:hover {
+            color: #8c2538;
         }
     }
 
