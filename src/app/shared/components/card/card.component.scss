@@ -7,11 +7,13 @@
     border-width: 1px;
     
     &.small {
-
+        .card-text {
+            font-size: 0.75rem;
+            text-align: center;
+        }
     }
 
     &.medium {
-
         .card-title {
             font-size: 14px;
         }
@@ -72,7 +74,24 @@
         }
     }
 
+    &.secondary {
+        border-color: #224558;
+        background-color: #E7F1F7;
+
+        .card-text {
+            color: #224558;
+            font-family: 'Livvic Bold';
+        }
+    }
+
     @media (max-width: 767px) {
+        &.small {
+            width: 180px;
+            height: 100px;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+        }
+
         &.medium {
             width: 200px;
             height: 200px;
@@ -104,7 +123,13 @@
         } 
     }
 
-    @media(max-width: 1023px) {
+    @media(min-width: 768px) {
+        &.small {
+            width: 180px;
+            height: 100px;
+            padding: 0.5rem;
+        }
+
         &.medium {
             width: 200px;
             height: 200px;
@@ -137,6 +162,13 @@
     }
 
     @media(min-width: 1024px) {
+        &.small {
+            width: 180px;
+            height: 100px;
+            padding: 0.5rem;
+            margin-right: 1rem;
+        }
+
         &.medium {
             width: 250px;
             height: 250px;

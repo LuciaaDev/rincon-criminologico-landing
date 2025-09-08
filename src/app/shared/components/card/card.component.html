@@ -4,11 +4,15 @@
     }
     <p class="card-title">{{cardTitle | transloco}}</p>
 
-    <hr class="line-title">
+    @if(hasLine) {
+        <hr class="line-title">
+    }
 
     <p class="card-text">{{cardText | transloco}}</p>
     
-    <button class="btn-content"
-    (click)="onClickCard()"
-    >{{ buttonText | transloco }}</button>
+    @if(hasButton) {
+        <button class="btn-content"
+        (click)="onClickCard()"
+        >{{ buttonText | transloco }}</button>
+    }
 </div>

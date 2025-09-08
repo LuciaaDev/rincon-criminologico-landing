@@ -14,8 +14,10 @@ export class CardComponent {
     @Input() iconUrl!: string;
     @Input() cardTitle!: string;
     @Input() cardText!: string;
+    @Input() hasLine = false;
     @Input() cardColor!: string;
     @Input() cardSize!: string;
+    @Input() hasButton = false;
     @Input() buttonText!: string;
 
     @Output() clickCardChange = new EventEmitter<void>();

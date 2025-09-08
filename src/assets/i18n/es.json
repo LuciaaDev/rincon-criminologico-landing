@@ -37,10 +37,10 @@
         },
         "find": {
             "title_find": "¿Qué encontrarás en Rincón Criminológico?",
-            "first_card": "Acceso tanto a contenido GRATUITO como PREMIUM",
-            "second_card": "Material basado en rigor científico",
-            "third_card": "Un espacio creado desde cero por Lucía Ruiz Martínez, criminóloga y desarrolladora web",
-            "fourth_card": "El lugar que te enseña y te invita a la reflexión y al pensamiento crítico al mismo tiempo"
+            "first_card": "Material basado en rigor científico",
+            "second_card": "Un lugar que te enseña y te invita a la reflexión y al pensamiento crítico al mismo tiempo",
+            "third_card": "Acceso tanto a contenido GRATUITO como PREMIUM",
+            "fourth_card": "Un espacio creado desde cero por Lucía Ruiz, criminóloga y desarrolladora web"
         },
         "questions": {
             "title_questions": "¿Tienes dudas? Aquí puedes resolverlas",
