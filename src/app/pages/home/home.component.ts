@@ -21,9 +21,13 @@ export class HomeComponent implements OnInit {
     public newsIconUrl = '../../../assets/icons/news-red.svg';
     public reflectionIconUrl = '../../../assets/icons/reflection-red.svg';
 
-    public questionsIconUrl = '../../../assets/icons/question-mark.svg';
-    public contactIconUrl = '../../../assets/icons/mail.svg';
-    public aboutMeIconUrl = '../../../assets/icons/person.svg';
+    public questionsIconUrl = '../../../assets/icons/question-mark-red.svg';
+    public contactIconUrl = '../../../assets/icons/mail-red.svg';
+    public aboutMeIconUrl = '../../../assets/icons/person-red.svg';
+
+    public questionsHoverUrl = '../../../assets/icons/question-mark-blue.svg';
+    public contactHoverUrl = '../../../assets/icons/mail-blue.svg';
+    public aboutMeHoverUrl = '../../../assets/icons/person-blue.svg';
 
     ngOnInit(): void {
         this.checkScreenSize();

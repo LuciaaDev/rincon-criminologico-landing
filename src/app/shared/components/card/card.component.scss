@@ -44,10 +44,16 @@
 
     &.circle {
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         padding: 0.5rem;
-        transition: all 0.3s ease;
+        font-size: 0.75rem;
+        transition: transform 0.3s ease;
+
+        .icon-card {
+            width: 20px;
+            height: 20px;
+        }
     }
 
     &.primary {
@@ -96,7 +102,6 @@
         border-color: #224558;
         background-color: #C1DDEB;
         cursor: pointer;
-
         .card-text {
             color: #224558;
             font-family: 'Livvic Bold';
@@ -105,13 +110,7 @@
     }
 
     &.tertiary:hover {
-        .icon-card {
-            color: #224558;
-        }
-
-        .card-text:hover {
-            color: #8c2538;
-        }
+        transform: scale(1.05);
     }
 
     @media (max-width: 767px) {
@@ -131,6 +130,7 @@
                 padding-bottom: 0.25rem;
                 width: 42px;
                 height: 44px;
+                transition: color 0.3 ease;
             }
 
             .card-title {
@@ -151,6 +151,10 @@
                 height: 25px;
             }
         } 
+
+        &.circle {
+
+        }
     }
 
     @media(min-width: 768px) {
