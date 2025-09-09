@@ -11,7 +11,40 @@
         "lang_english": "Inglés",
         "lang_valencian": "Valenciano"
     },
-    "prueba": {
-        "messg": "Hola Mundo"
+    "home": {
+        "slogan": {
+            "title_slogan": "La Criminología a tu alcance",
+            "intro_slogan": "¡Bienvenido a Rincón Criminológico! Un espacio de divulgación criminológica que tiene como objetivo enseñarte de forma fácil en qué consiste esta ciencia y su importancia en la sociedad.",
+            "btn_slogan": "Quiero saber más"
+        },
+        "info_access": {
+            "title_info": "Accede a toda esta información",
+            "title_articles": "Artículos criminológicos",
+            "explain_articles": "Aprende de forma sencilla sobre diversos temas de interés criminológico.",
+            "btn_know_more": "Saber más",
+            "title_news": "Noticias y actualidad",
+            "explain_news": "Infórmate mediante análisis criminológicos acerca de eventos relevantes del momento.",
+            "title_reflections": "Reflexiones",
+            "explain_reflections": "Disfruta de un espacio para profundizar en cuestiones relacionadas con la Criminología."
+        },
+        "content": {
+            "title_content": "Si te interesa la Criminología, has llegado al lugar adecuado",
+            "explain_free_content": "Rincón Criminológico es un espacio cuyo objetivo es acercar la Criminología a cualquier persona, por eso ofrece <strong>contenido GRATUITO</strong>.",
+            "btn_free_content": "Contenido GRATUITO",
+            "explain_premium_content": "Si quieres acceder al <strong>contenido PREMIUM</strong>, en cada publicación podrás descargar un PDF con toda la información al completo por solo:",
+            "prize_premium_content": "12€",
+            "btn_premium_content": "Contenido PREMIUM"
+        },
+        "find": {
+            "title_find": "¿Qué encontrarás en Rincón Criminológico?",
+            "first_card": "Material basado en rigor científico",
+            "second_card": "Un lugar que te enseña y te invita a la reflexión y al pensamiento crítico al mismo tiempo",
+            "third_card": "Acceso tanto a contenido GRATUITO como PREMIUM",
+            "fourth_card": "Un espacio creado desde cero por Lucía Ruiz, criminóloga y desarrolladora web"
+        },
+        "questions": {
+            "title_questions": "¿Tienes dudas?\nAquí puedes resolverlas",
+            "frequent_questions": "Preguntas frecuentes"
+        }   
     }
 }

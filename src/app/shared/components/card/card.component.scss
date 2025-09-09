@@ -1,0 +1,237 @@
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    
+    &.small {
+        .card-text {
+            font-size: 0.75rem;
+            text-align: center;
+        }
+    }
+
+    &.medium {
+        .card-title {
+            font-size: 14px;
+        }
+
+        .line-title {
+            height: 1px;
+        }
+
+        .card-text {
+            font-size: 0.75rem;
+            text-align: center;
+        }
+
+        .btn-content {
+            border-width: 1px;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            height: 30px;
+            width: 120px;
+            font-size: 0.75rem;
+            transition: all 0.3s ease;
+        }
+    }
+
+    &.large {
+
+    }
+
+    &.circle {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        padding: 0.5rem;
+        font-size: 0.75rem;
+        transition: transform 0.3s ease;
+
+        .icon-card {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &.primary {
+        border-color: #224558;
+        background-color: #C1DDEB;
+
+        .card-title {
+            color: #8C2538;
+            font-family: 'Merriweather';
+            font-weight: bold;
+        }
+
+        .line-title {
+            border-color: #8C2538;
+        }
+
+        .card-text {
+            color: #224558;
+            font-family: 'Livvic Regular';
+        }
+
+        .btn-content {
+            background-color: #8c2538;
+            color: #FBE9E8;
+            border-color: #8c2538;
+            font-family: 'Livvic Bold';
+        }
+
+        .btn-content:hover {
+            background-color: #FBE9E8;
+            color: #8c2538;
+        }
+    }
+
+    &.secondary {
+        border-color: #224558;
+        background-color: #E7F1F7;
+
+        .card-text {
+            color: #224558;
+            font-family: 'Livvic Bold';
+        }
+    }
+
+    &.tertiary {
+        border-color: #224558;
+        background-color: #C1DDEB;
+        cursor: pointer;
+        .card-text {
+            color: #224558;
+            font-family: 'Livvic Bold';
+            text-align: center;
+        }
+    }
+
+    &.tertiary:hover {
+        transform: scale(1.05);
+    }
+
+    @media (max-width: 767px) {
+        &.small {
+            width: 180px;
+            height: 100px;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+        }
+
+        &.medium {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 1rem;
+
+            .icon-card {
+                padding-bottom: 0.25rem;
+                width: 42px;
+                height: 44px;
+                transition: color 0.3 ease;
+            }
+
+            .card-title {
+                padding-bottom: 0.25rem;
+            }
+
+            .line-title {
+                padding-bottom: 0.25rem;
+                width: 60%;
+            }
+
+            .card-text {
+                padding-bottom: 0.25rem;
+            }
+
+            .btn-content {
+                width: 75px;
+                height: 25px;
+            }
+        } 
+
+        &.circle {
+
+        }
+    }
+
+    @media(min-width: 768px) {
+        &.small {
+            width: 180px;
+            height: 100px;
+            padding: 0.5rem;
+        }
+
+        &.medium {
+            width: 200px;
+            height: 200px;
+            margin-right: 1rem;
+
+            .icon-card {
+                width: 42px;
+                height: 44px;
+            }
+
+            .card-title {
+                font-size: 0.875rem;
+                padding-bottom: 0.25rem;
+            }
+
+            .line-title {
+                padding-bottom: 0.25rem;
+                width: 60%;
+            }
+
+            .card-text {
+                padding-bottom: 0.25rem;
+            }
+
+            .btn-content {
+                width: 75px;
+                height: 25px;
+            }
+        }
+    }
+
+    @media(min-width: 1024px) {
+        &.small {
+            width: 180px;
+            height: 100px;
+            padding: 0.5rem;
+            margin-right: 1rem;
+        }
+
+        &.medium {
+            width: 250px;
+            height: 250px;
+            margin-right: 1rem;
+
+            .icon-card {
+                padding-bottom: 0.5rem;
+                width: 42px;
+                height: 44px;
+            }
+
+            .card-title {
+                font-size: 1rem;
+                padding-bottom: 0.5rem;
+            }
+
+            .line-title {
+                padding-bottom: 0.5rem;
+                width: 60%;
+            }
+
+            .card-text {
+                padding-bottom: 0.5rem;
+            }
+
+            .btn-content {
+                width: 75px;
+                height: 25px;
+            }
+        }
+    }
+}

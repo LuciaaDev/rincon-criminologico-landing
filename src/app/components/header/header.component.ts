@@ -49,6 +49,7 @@ export class HeaderComponent implements OnInit {
     ];
 
     public showActionButtons = false;
+    public screenSize = 877;
 
     public selectedLangOption!: string;
 
@@ -90,6 +91,6 @@ export class HeaderComponent implements OnInit {
      * the size of the screen.
      */
     public checkScreenSize(): void {
-        this.showActionButtons = window.innerWidth >= 1024;
+        this.showActionButtons = window.innerWidth >= this.screenSize;
     }
 }
