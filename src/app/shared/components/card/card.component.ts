@@ -12,7 +12,6 @@ import { TranslocoModule } from "@jsverse/transloco";
 export class CardComponent {
     @Input() hasIcon = false;
     @Input() iconUrl!: string;
-    @Input() iconHoverUrl!: string;
     @Input() cardTitle!: string;
     @Input() cardText!: string;
     @Input() hasLine = false;
