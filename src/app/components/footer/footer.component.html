@@ -1,0 +1,46 @@
+<div class="bg-baseRCBlueNinth px-[5%] pt-[10%] md:pt-[3%] md:px-[10%] lg:pt-[3%] lg:px-[20%] h-auto text-baseRCBlueFirst">
+    <!-- First part -->
+    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 justify-start">
+        <!-- Logo -->
+        <div class="logo-container w-[165px] h-[40px] flex flex-col justify-start cursor-pointer md:pt-[8%] lg:pt-[8%]" (click)="goToHomeLanding()">
+            <p class="rincon-text text-lg font-bold">{{"logo.rincon" | transloco }}</p>
+            <p class="crim-text text-lg">{{"logo.criminologico" | transloco }}</p>
+        </div>
+    
+        <!-- Management -->
+        <div>
+            <p class="section-title font-bold text-xs">{{"footer.management" | transloco}}</p>
+            <p class="section-content text-xs">{{"home.questions.frequent_questions" | transloco}}</p>
+            <p class="section-content text-xs">{{"header.contact" | transloco}}</p>
+            <p class="section-content text-xs">{{"header.about_me" | transloco}}</p>
+        </div>
+    
+        <!-- Social Media -->
+        <div>
+            <p class="section-title font-bold text-xs">{{"footer.social_media.title" | transloco}}</p>
+            <p class="section-content text-xs">{{"footer.social_media.instagram" | transloco}}</p>
+            <p class="section-content text-xs">{{"footer.social_media.tik_tok" | transloco}}</p>
+            <p class="section-content text-xs">{{"footer.social_media.linkedin" | transloco}}</p>
+        </div>
+    
+        <!-- Legal -->
+         <div>
+            <p class="section-title font-bold text-xs">{{"footer.legal.title" | transloco}}</p>
+            <p class="section-content text-xs">{{"footer.legal.legal_notice" | transloco}}</p>
+            <p class="section-content text-xs">{{"footer.legal.privacy_policy" | transloco}}</p>
+            <p class="section-content text-xs">{{"footer.legal.cookies_policy" | transloco}}</p>
+         </div>
+    </div>
+
+    <!-- Line -->
+    <hr class="mt-2">
+
+    <!-- Second part -->
+    <div class="flex py-2 justify-center items-center sm:flex-col md:justify-between lg:md:justify-between">
+        <div class="flex">
+            <img class="mr-1 mb-1 w-3 h-3" [src]="copyrightUrl" alt="copyright_icon">
+            <p class="bottom-text text-[10px]">{{"footer.copyright" | transloco : { currentYear: currentYear } }}</p>
+        </div>
+        <p class="bottom-text text-[10px]">{{"footer.powered_by" | transloco}}</p>
+    </div>
+</div>

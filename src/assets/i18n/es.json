@@ -46,5 +46,22 @@
             "title_questions": "¿Tienes dudas?\nAquí puedes resolverlas",
             "frequent_questions": "Preguntas frecuentes"
         }   
+    },
+    "footer": {
+        "management": "Gestión",
+        "social_media": {
+            "title": "Redes sociales",
+            "instagram": "Instagram",
+            "tik_tok": "TikTok",
+            "linkedin": "LinkedIn"
+        },
+        "legal": {
+            "title": "Legal",
+            "legal_notice": "Aviso legal",
+            "privacy_policy": "Política de privacidad",
+            "cookies_policy": "Política de cookies"
+        },
+        "copyright": "{{currentYear}} Rincón Criminológico. Todos los derechos reservados.",
+        "powered_by": "Powered by Lucía Ruiz Martínez"
     }
 }
