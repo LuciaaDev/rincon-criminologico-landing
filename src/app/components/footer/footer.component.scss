@@ -1,0 +1,28 @@
+.rincon-text {
+    @apply leading-none m-0;
+    font-family: 'Merriweather';
+}
+
+.crim-text {
+    @apply leading-none m-0;
+    font-family: 'Livvic Bold';
+}
+
+.section-title {
+    font-family: 'Merriweather'; 
+}
+
+.section-content {
+    font-family: 'Livvic Regular'; 
+    text-decoration: none;
+    cursor: pointer;
+    transition: text-decoration 0.3;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.bottom-text {
+    font-family: 'Livvic Bold';
+}

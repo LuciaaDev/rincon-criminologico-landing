@@ -2,7 +2,7 @@
     <div class="logo-container w-[165px] h-[40px] flex flex-col justify-start cursor-pointer pt-0.5" (click)="goToHomeLanding()">
         <p class="rincon-text text-baseRCBlueFirst text-lg font-bold">{{"logo.rincon" | transloco }}</p>
         <p class="crim-text text-baseRCBlueFirst text-lg">{{"logo.criminologico" | transloco }}</p>
-      </div>
+    </div>
     @if (showActionButtons) {
         <div class="action-buttons w-[280px] flex justify-between text-sm">
             <app-button [text]="'header.contact'" [color]="'primary'" [size]="'medium'"></app-button>

@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { TranslocoModule, TranslocoService} from '@jsverse/transloco';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   standalone: true,
-  imports: [TranslocoModule, HeaderComponent, HomeComponent],
+  imports: [TranslocoModule, HeaderComponent, HomeComponent, FooterComponent],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
